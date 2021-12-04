@@ -1,0 +1,31 @@
+.liveSearch {
+	position: relative;
+}
+
+.liveSearch input {
+	width: 150px;
+	box-sizing: border-box;
+}
+
+.search__list {
+	position: absolute;
+	top: 10px;
+	width: 150px;
+	height: 200px;
+	overflow: auto;
+	box-shadow: 0 6px 10px #ccc;
+	background-color: white;
+	border: 1px solid black;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0px;
+}
+
+.search__list.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search__list li {
+	cursor: pointer;
+}
