@@ -5,8 +5,10 @@ function getOccurrenceOfArrayByString(strings, currentString) {
 	if (currentString === "") {
 		return arrayOfOccurences;
 	}
+	let upperCaseCurrentString = currentString.toUpperCase();
 	for (let string of strings) {
-		if (string.indexOf(currentString) > -1) {
+		let upperCaseString = string.toUpperCase();
+		if (upperCaseString.indexOf(upperCaseCurrentString) > -1) {
 			arrayOfOccurences.push(string);
 		}
 	}
